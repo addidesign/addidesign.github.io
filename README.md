@@ -21,8 +21,8 @@ Features:
 
 ### Setup
 ```
-git clone https://github.com/harrycresswell/gulp-starter.git
+git clone https://github.com/harrycresswell/jekyll-gulp-starter.git
 cd jekyll-gulp-starter
 npm install
 ```
-Then run `gulp` in the terminal 
+Then run `gulp` in the terminal
