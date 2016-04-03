@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    margin: 20px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -178,6 +178,7 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        padding: 20px 0px;
     }
 }
 
@@ -188,7 +189,8 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 

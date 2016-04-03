@@ -130,7 +130,8 @@ ul, ol, dl, figure,
  */
 img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 20px 0px; }
 
 /**
  * Figures
@@ -251,8 +252,8 @@ pre {
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
+  margin: 20px;
   position: relative; }
 
 .site-title {
@@ -375,7 +376,8 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding: 20px 0px; }
 
 .post-meta {
   font-size: 14px;
@@ -383,7 +385,8 @@ pre {
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  font-size: 40px;
+  line-height: 40px; }
 
 /**
  * Posts

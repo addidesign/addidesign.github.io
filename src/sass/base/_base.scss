@@ -48,6 +48,7 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    margin: 20px 0px;
 }
 
 
@@ -105,7 +106,7 @@ a {
     &:hover {
         color: $brand-color-dark;
         text-decoration: none;
-        
+
     }
 }
 
