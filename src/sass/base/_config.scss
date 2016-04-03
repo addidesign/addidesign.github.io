@@ -5,25 +5,32 @@
  */
 
  /**
+  * Fonts
+  */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+ /**
   * Colours
   */
 
- // Our variables
- $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ $base-font-family: 'Roboto', sans-serif;
  $base-font-size:   16px;
  $base-font-weight: 400;
  $small-font-size:  $base-font-size * 0.875;
- $base-line-height: 1.5;
+ $base-line-height: 30px;
 
  $spacing-unit:     30px;
 
  $text-color:       #111;
  $background-color: #fdfdfd;
- $brand-color:      #2a7ae2;
+ $brand-color:      #4d8cf4;
 
  $grey-color:       #828282;
  $grey-color-light: lighten($grey-color, 40%);
  $grey-color-dark:  darken($grey-color, 25%);
+ $brand-color-dark:  darken($brand-color, 25%);
 
  // Width of the content area
  $content-width:    800px;
@@ -39,6 +46,105 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+
+/**
+ * Animations
+ */
+
+.animated {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+
+
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+
+
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
 
 
 // Use media queries like this:

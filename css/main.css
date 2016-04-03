@@ -4,8 +4,90 @@
  * All the variables used in the theme
  */
 /**
+  * Fonts
+  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+/**
   * Colours
   */
+/**
+ * Animations
+ */
+.animated {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
 /**
  * Reset some basic elements
  */
@@ -15,11 +97,14 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+html {
+  -webkit-font-smoothing: antialiased !important; }
+
 /**
  * Basic styling
  */
 body {
-  font: 400 16px / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px / 30px "Roboto", sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -76,13 +161,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
-  text-decoration: none; }
+  color: #4d8cf4;
+  text-decoration: none;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
   a:visited {
-    color: #1756a9; }
+    color: #4d8cf4; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #0b4cb6;
+    text-decoration: none; }
 
 /**
  * Blockquotes
@@ -102,11 +189,16 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  background-color: #eef; }
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
+  font-size: 14px;
+  color: #4d8cf4;
+  background-color: whitesmoke;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 2px 4px;
+  white-space: nowrap;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
 
 code {
   padding: 1px 5px; }
@@ -159,20 +251,17 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   position: relative; }
 
 .site-title {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 20px;
   line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #4d8cf4; }
 
 .site-nav {
   float: right;
@@ -181,7 +270,7 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 30px; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
@@ -277,7 +366,7 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 140px 0; }
 
 .page-heading {
   font-size: 20px; }

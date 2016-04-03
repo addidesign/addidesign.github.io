@@ -8,6 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html {
+    -webkit-font-smoothing: antialiased !important;
+}
 
 
 /**
@@ -93,14 +96,16 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    transition: color .2s ease-in-out;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brand-color-dark;
+        text-decoration: none;
+        
     }
 }
 
@@ -129,10 +134,15 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace!important;
+    font-size: 14px;
+    color: $brand-color;
+    background-color: whitesmoke;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 2px 4px;
+    white-space: nowrap;
+    border-radius: 2px;
 }
 
 code {
