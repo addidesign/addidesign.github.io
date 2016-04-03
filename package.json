@@ -1,5 +1,5 @@
 {
-  "name": "gulp-starter",
+  "name": "jekyll-gulp-starter",
   "version": "1.0.0",
   "description": "This is my gulp starter for building static sites",
   "main": "gulpfile.js",
