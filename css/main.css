@@ -79,7 +79,8 @@ li > ol {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  color: #2e353b; }
+  color: #2e353b;
+  line-height: 1.7; }
 
 /**
  * Links
@@ -483,12 +484,14 @@ pre {
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
-    font-size: 32px; }
+    font-size: 32px;
+    margin-top: 40px; }
     @media screen and (max-width: 800px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
-    font-size: 26px; }
+    font-size: 26px;
+    margin-top: 40px; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }

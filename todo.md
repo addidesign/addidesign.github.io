@@ -1,10 +1,8 @@
 # todo
 
-
-
 - add some flexbox action
-- add bullets to ul in posts
 - add read time
+- code, pre bg color
 - add option to add discus comments
 - set up `gulpfile.js` to auto deploy to `gh-pages`
 - write the medium post
