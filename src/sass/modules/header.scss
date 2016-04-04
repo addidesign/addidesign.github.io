@@ -1,4 +1,83 @@
 /**
+ * Site header
+ */
+ .header {
+   width: 100%;
+ }
+
+ .header ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   overflow: hidden;
+ }
+
+ .header li a {
+   display: block;
+   padding: 20px 0px;
+   text-decoration: none;
+ }
+
+
+ .header .menu {
+   clear: both;
+   max-height: 0;
+   transition: max-height .2s ease-out;
+ }
+
+
+.site-title {
+    margin-bottom: 0;
+    padding: 20px 0px;
+    float: left;
+
+    &,
+    &:visited {
+        color: $brand-color;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
+        }
+    }
+}
+
+/**
  * Style the hamburger icon
  */
 

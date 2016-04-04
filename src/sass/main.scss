@@ -2,7 +2,10 @@
 @import "base/config";
 @import "base/base";
 @import "base/animate";
-@import "layouts/layout";
-@import "modules/mobile-nav";
+
+@import "modules/header";
+@import "modules/footer";
+@import "modules/page";
+@import "modules/post";
+
 @import "vendor/sanitize";
-@import "vendor/syntax-highlighting";

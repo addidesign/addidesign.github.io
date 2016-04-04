@@ -18,7 +18,7 @@ html {
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
+    color: #576366;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -87,6 +87,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    color: #2e353b;
 }
 
 
@@ -133,21 +134,37 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace!important;
-    font-size: 14px;
-    color: $brand-color;
-    background-color: whitesmoke;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 2px 4px;
-    white-space: nowrap;
-    border-radius: 2px;
+pre {
+  font-size: 14px;
+border-radius: 5px;
+font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+overflow: auto;
+padding: 10px 20px;
+margin: 20px 0;
+background: #f6f9fa;
+line-height: 1.4;
+overflow-wrap: break-word;
+word-wrap: break-word;
+word-break: break-all;
 }
 
 code {
     padding: 1px 5px;
+    font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+    background-color: #f6f9fa;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #384047;
+}
+
+p code {
+  color: $brand-color;
 }
 
 pre {
