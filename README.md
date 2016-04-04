@@ -15,9 +15,12 @@ Features:
 
 ### Install pre-requisites
 
+- Xcode command line utilities `xcode-select --install`
+- [Homebrew](http://brew.sh/)
 - [Node.js](http://nodejs.org/) `brew install node`
-- Gulp `npm install -g gulp`
-- Jekyll `gem install jekyll`
+- [Gulp](http://gulpjs.com/) `npm install -g gulp`
+- [Ruby](https://www.ruby-lang.org/en/) `brew install ruby`
+- [Jekyll](http://jekyllrb.com/) `gem install jekyll`
 
 ### Setup
 ```
