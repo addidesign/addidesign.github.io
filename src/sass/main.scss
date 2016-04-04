@@ -1,7 +1,8 @@
 // Import partials
 @import "base/config";
 @import "base/base";
+@import "base/animate";
 @import "layouts/layout";
-//@import "modules/module";
+@import "modules/mobile-nav";
 @import "vendor/sanitize";
 @import "vendor/syntax-highlighting";
