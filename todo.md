@@ -1,12 +1,12 @@
 # todo
 
 - add some flexbox action
+- set up `gulpfile.js` to auto deploy to `gh-pages`
 - add read time
 - code, pre bg color
-- add option to add discus comments
-- set up `gulpfile.js` to auto deploy to `gh-pages`
 - write the medium post
 - tweet about it
+- ~~add option to add disqus comments~~
 - ~~sort out padding on social links~~
 - ~~make a better mobile nav~~
 - ~~restructure sass modules~~

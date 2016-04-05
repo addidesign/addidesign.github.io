@@ -20,5 +20,8 @@ github_username:  github
 # Build settings
 markdown: kramdown
 
+# Remove hashtag below and update username to enable Disqus comments
+# disqus_shortname: usernamehere
+
 # files and folders to exlude from the Jekyll build
 exclude: ["node_modules", "gulpfile.js", "package.json"]

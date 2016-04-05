@@ -29,3 +29,8 @@ cd jekyll-gulp-starter
 npm install
 ```
 Then run `gulp` in the terminal
+
+
+### Adding Comments
+
+Create an account at [Disqus](https://disqus.com/) then [register a new site](https://disqus.com/admin/signup/)
