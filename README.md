@@ -33,4 +33,7 @@ Then run `gulp` in the terminal
 
 ### Adding Comments
 
-Create an account at [Disqus](https://disqus.com/) then [register a new site](https://disqus.com/admin/signup/)
+- Create an account at [Disqus](https://disqus.com/) .
+- [Install](https://disqus.com/admin/create/) on a new site and follow setup instructions.
+- In `_config.yml` update Disqus shortname and remove #.
+- In `post.html` remove comments around `{% include disqus.html %}` and add `comments: true` to the front matter. Comments should now load automatically.
