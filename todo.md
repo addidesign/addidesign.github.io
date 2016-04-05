@@ -1,6 +1,7 @@
 # todo
 
 - add some flexbox action
+- add some js setup to gulp
 - set up `gulpfile.js` to auto deploy to `gh-pages`
 - add read time
 - code, pre bg color
