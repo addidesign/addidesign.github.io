@@ -1,14 +1,12 @@
 <header class="header">
-  <div class="wrapper">
-    <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-      <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
+
+    <a href="/"><img class="avatar" src="/img/addidesign-adam.jpeg" alt="Image of Adam Ward"></a>
+    <h1>Hi, I'm Adam.</h1>
+    <p>Web enthusiast and <br />Developer at <a href="https://atomicsmash.co.uk">Atomic Smash</a></p>
+
+    <ul class="social__icons">
+        <li>{% include icon-github.html %}</li>
+        <li>{% include icon-twitter.html %}</li>
     </ul>
-  </div>
+
 </header>

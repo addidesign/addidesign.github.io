@@ -35,17 +35,3 @@
 .social a {
   margin-left: 20px;
 }
-
-@include media-query($on-laptop) {
-  .contact {
-    float: none;
-  }
-  .social {
-    float: none;
-    margin-top: 10px;
-
-    a {
-      margin: 0px 20px 0 0;
-    }
-  }
-}

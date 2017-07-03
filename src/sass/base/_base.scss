@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
 }
 
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
 
 
 /**
@@ -185,20 +189,11 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
-    }
+    // overflow-x: hidden;
 }
 
 

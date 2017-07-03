@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-gulp-starter",
+  "name": "addi-design",
   "version": "1.0.0",
-  "description": "This is my gulp starter for building static sites",
+  "description": "This is my personal site",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -18,12 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harrycresswell/gulp-starter.git"
+    "url": "git+https://github.com/addidesign/addidesign.github.io"
   },
-  "author": "Harry Cresswell",
+  "author": "Adam Ward",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/harrycresswell/gulp-starter/issues"
-  },
-  "homepage": "https://github.com/harrycresswell/gulp-starter#readme"
+  "homepage": "https://github.com/addidesign/addidesign.github.io"
 }

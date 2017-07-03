@@ -1,46 +1,60 @@
 /**
  * Posts
  */
+
+.post__container,
+.post {
+    width: 70vw;
+    height: 100vh;
+    overflow-y: scroll;
+    float: right;
+    position: relative;
+    padding: 40px 60px 60px;
+    @include bp($mobile) {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 34px;
     letter-spacing: -1px;
     line-height: 1;
+}
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
+.post__title {
+    font-weight: bold;
+    color: $brand-color;
+    font-size: 34px;
+}
+
+.post__excerpt {
+    font-size: 16px;
+    color: $grey-color;
+}
+
+
+.all__posts {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 800;
+    i {
+        margin-right: 8px;
     }
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-        margin-top:40px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-        margin-top:40px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+.catergory__list {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding-top: 8px;
+    border-top: 1px solid $brand-color;
+    li {
+        display: inline-block;
+        margin-right: 10px;
     }
 }

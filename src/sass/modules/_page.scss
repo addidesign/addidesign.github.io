@@ -1,12 +1,12 @@
 /**
  * Page content
  */
-.page-content {
-    padding: 140px 0;
-}
 
 .page-heading {
     font-size: 20px;
+    @include bp($mobile) {
+        display: none;
+    }
 }
 
 .post-list {
@@ -16,16 +16,46 @@
     > li {
         margin-bottom: $spacing-unit;
         padding: 20px 0px;
+        transition: 0.3s all ease;
+        position: relative;
+
+        @include bp($mobile) {
+            text-align: center;
+        }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    position: relative;
+    display: block;
+    transition: 0.3s all ease;
 }
 
 .post-link {
+    position: relative;
     display: block;
-    font-size: 40px;
-    line-height: 40px;
+    margin: 40px 0 80px;
+    p {
+        color: $grey-color;
+    }
+    &:hover {
+        color: $brand-color;
+        opacity: 0.6;
+        cursor: pointer;
+
+        .post-meta {
+            padding-bottom: 20px;
+            &:after {
+                content: '';
+                height: 2px;
+                width: 20px;
+                background: $brand-color;
+                position: absolute;
+                left: 0;
+                top: 33px;
+            }
+        }
+    }
 }
